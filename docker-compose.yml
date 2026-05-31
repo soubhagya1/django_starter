@@ -19,6 +19,8 @@ services:
 
   db:
     image: postgres:17
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
@@ -34,6 +36,9 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+  
+  volumes:
+    postgres_data:
 
   redis:
     image: redis:7.4

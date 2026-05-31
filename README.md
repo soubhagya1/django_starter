@@ -8,6 +8,23 @@ This project was built to showcase backend engineering concepts beyond basic CRU
 
 ---
 
+## Highlights
+
+- JWT Authentication & Authorization
+- Refresh Token Rotation & Blacklisting
+- Role Based Access Control (RBAC)
+- Redis Caching
+- Celery Background Jobs
+- Celery Beat Scheduling
+- API Versioning
+- Dockerized Deployment
+- Swagger/OpenAPI Documentation
+- Structured Logging
+- Global Exception Handling
+- Pytest Test Suite
+- 83%+ Test Coverage
+- GitHub Actions CI/CD
+
 ## Features
 
 ### Authentication & Security
@@ -401,3 +418,26 @@ docker compose exec web pytest --cov=apps
 ## Author
 
 Backend Engineering Project built to demonstrate production-grade Django REST Framework development practices.
+
+## Build Status
+
+![Tests](https://github.com/soubhagya1/django_starter/actions/workflows/test.yml/badge.svg)
+
+## Test Coverage
+
+Current test coverage: **83%+**
+
+Covered areas:
+
+- JWT Authentication
+- User Registration
+- RBAC Permissions
+- Product APIs
+- Search & Filtering
+- Refresh Token Blacklisting
+
+## API Documentation
+
+Swagger/OpenAPI documentation:
+
+![Swagger](docs/swagger.png)
