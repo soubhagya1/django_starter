@@ -13,6 +13,10 @@ db.sqlite3
 media/
 staticfiles/
 
+.github/workflows/test_bkp.yml
+docker-compose copy.yml
+New Text Document.txt
+requirements copy.txt
 # Environment variables
 .env
 

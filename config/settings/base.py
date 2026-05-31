@@ -15,6 +15,10 @@ load_dotenv(BASE_DIR / ".env")
 ROOT_URLCONF = "config.urls"
 
 SECRET_KEY = os.getenv("SECRET_KEY")
+# SECRET_KEY = os.getenv(
+#     "SECRET_KEY",
+#     default="django-insecure-local-development-key",
+# )
 DEBUG = True
 
 # STATIC_URL = '/static/'

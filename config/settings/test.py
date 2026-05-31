@@ -2,6 +2,8 @@ from .base import *
 
 DEBUG = False
 
+SECRET_KEY = "github-actions-test-secret-key"
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
