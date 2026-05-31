@@ -1,0 +1,16 @@
+<h2>Create Product</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <h3>Basic Info</h3>
+    {{ product_form.as_p }}
+
+    <h3>Manufacturing</h3>
+    {{ manufacturing_form.as_p }}
+
+    <h3>Owner Details</h3>
+    {{ owner_form.as_p }}
+
+    <button type="submit">Submit</button>
+</form>
