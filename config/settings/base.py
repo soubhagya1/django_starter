@@ -215,6 +215,11 @@ SIMPLE_JWT = {
 #     },
 # }
 
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(exist_ok=True)
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -228,7 +233,8 @@ LOGGING = {
         "file": {
             "level": "INFO",
             "class": "logging.FileHandler",
-            "filename": os.path.join(BASE_DIR, "logs/app.log"),
+            # "filename": os.path.join(BASE_DIR, "logs/app.log"), this did notwork in git action could not create app.log file
+            "filename": LOG_DIR / "app.log",
             "formatter": "verbose",
         },
         "console": {

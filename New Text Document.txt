@@ -1610,6 +1610,32 @@ AWS basics
 3. Pre-commit Hooks
 4. Architecture Diagram
 
+
+gitaction-
+git status
+Verify .gitignore First and env and other files
+Stage Everything
+git add .
+git status
+Changes to be committed
+then
+git commit -m "Complete production-ready Django backend project"
+
+check remote-
+git remote -v
+If nothing appears:
+git remote add origin <your-github-repo-url>
+git remote add origin https://github.com/yourname/django-starter.git
+
+If branch is main:
+git push -u origin main
+if master
+git push -u origin master
+to check
+git branch
+
+could not push because no permission for workflow in pat,created new pat with permissionsdeleted the credential from windows credential manager then re authenticated and pushed
+
 next-
 Dockerizing full stack (Django + Redis + Celery + DB)
 
